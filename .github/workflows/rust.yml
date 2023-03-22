@@ -29,7 +29,7 @@ jobs:
       - name: Upload benchmark result page
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "target/criterion/fuzzy search algorithm benchmarks"
+          path: "target/criterion"
 
   deploy:
     runs-on: ubuntu-latest
