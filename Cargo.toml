@@ -1,0 +1,21 @@
+[package]
+name = "fuzzy_find_algorithms_benchmarks"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fuzzy-matcher = "0.3.7"
+jaro_winkler_distance = { git = "https://github.com/r4ai/jaro_winkler_distance.rs", rev = "51326f4c031591a1913f1e1c4ebe66992f6e1a9f" }
+levenshtein_automata = "0.2.1"
+ngrammatic = "0.4.0"
+rust-fuzzy-search = "0.1.1"
+strsim = "0.10.0"
+sublime_fuzzy = "0.7.0"
+tantivy = "0.19.2"
+
+[dev-dependencies]
+criterion = { version = "0.4", features = ["html_reports"] }
+
+[[bench]]
+name = "bench_fuzzy_find"
+harness = false
