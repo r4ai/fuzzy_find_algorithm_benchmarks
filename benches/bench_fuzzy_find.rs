@@ -15,16 +15,16 @@ fn criterion_benchmark(c: &mut Criterion) {
     });
 
     group.bench_function("fuzzy_matcher SkimV2", |b| {
-        b.iter(|| fuzzy_matcher_skimv2(black_box("VSCode"), black_box(&data), black_box(0)))
+        b.iter(|| fuzzy_matcher_skimv2(black_box("VSCode"), black_box(&data), black_box(50)))
     });
 
     group.bench_function("fuzzy_matcher clangd", |b| {
-        b.iter(|| fuzzy_matcher_clangd(black_box("VSCode"), black_box(&data), black_box(0)))
+        b.iter(|| fuzzy_matcher_clangd(black_box("VSCode"), black_box(&data), black_box(50)))
     });
 
     let mut corups = setup_corpus(&data);
     group.bench_function("ngrammatic", |b| {
-        b.iter(|| ngrammatic(black_box("VSCode"), black_box(0), black_box(&mut corups)))
+        b.iter(|| ngrammatic(black_box("VSCode"), black_box(50), black_box(&mut corups)))
     });
 
     group.bench_function("rust_fuzzy_saerch", |b| {
