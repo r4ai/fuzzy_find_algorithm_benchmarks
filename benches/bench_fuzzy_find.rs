@@ -1,7 +1,7 @@
 use std::time::Duration;
 
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
-use fuzzy_find_algorithms_benchmarks::{
+use fuzzy_find_algorithm_benchmarks::{
     fuzzy_matcher_clangd, fuzzy_matcher_skimv2, get_data, jarowinkler, ngrammatic,
     rust_fuzzy_search, setup_corpus,
 };
