@@ -26,15 +26,10 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run bench
         run: cargo bench
-      - name: Upload benchmark result
+      - name: Upload benchmark result page
         uses: actions/upload-pages-artifact@v1
         with:
           path: "target/criterion/fuzzy search algorithm benchmarks"
-      - name: Upload benchmark result svg
-        uses: actions/upload-artifact@v2
-        with:
-          name: benchmark.svg
-          path: "target/criterion/fuzzy search algorithm benchmarks/report/violin.svg"
 
   deploy:
     runs-on: ubuntu-latest
