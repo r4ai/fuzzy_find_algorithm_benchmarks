@@ -1,5 +1,5 @@
 [package]
-name = "fuzzy_find_algorithms_benchmarks"
+name = "fuzzy_find_algorithm_benchmarks"
 version = "0.1.0"
 edition = "2021"
 
