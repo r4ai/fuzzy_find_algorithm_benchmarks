@@ -1,6 +1,6 @@
 # Fuzzy find algorithm benchmarks
 
-![Benchmark Result](https://r4ai.github.io/fuzzy_find_algorithm_benchmarks/report/violin.svg)
+<img src="https://r4ai.github.io/fuzzy_find_algorithm_benchmarks/report/violin.svg" alt="Benchmark result" width="100%" style="background-color: white;">
 
 Benchmarks following fuzzy find algorithms:
 
